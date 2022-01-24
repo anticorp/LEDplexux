@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{0df0269f-c5a8-44cf-9748-12f46c95cd9f}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\Color.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\FX_Effects\blipFX.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\FX_Effects\Effects.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\LEDplexux.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\LEDunit.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\PLEXUS.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\UnitState.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\_Common.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\BUILD_SETTINGS\_BUILD_SETTINGS.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Color.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\FX_Effects\blipFX.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\FX_Effects\Effects.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\LEDplexux.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\LEDunit.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\PLEXUS.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\UnitState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\_Common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)library.properties" />
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)cpp.hint" />
+    <None Include="$(MSBuildThisFileDirectory)LEDplexux.vcxitems" />
+    <None Include="$(MSBuildThisFileDirectory)LEDplexux.vcxitems.filters" />
+    <None Include="$(MSBuildThisFileDirectory)src\FX_Effects\cpp.hint" />
+  </ItemGroup>
+</Project>

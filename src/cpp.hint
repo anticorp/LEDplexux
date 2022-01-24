@@ -1,0 +1,22 @@
+
+#define bug adm::ULO()
+#define bugElse else adm::ULO()
+#define xbugElse else adm::ULO() << adm::STREAMKEYWORDS::trace_ << "(_FALSE_)? "
+#define bugBool(x) " {_" << #x << "_}=" << (x ? "{_TRUE_} " : "{_FALSE_} ")
+#define xbugBool(x) adm::ULO() << adm::STREAMKEYWORDS::vars_ << " {_" << #x << "_}=" << (x ? "{_TRUE_} " : "{_FALSE_} ")
+#define bugVar(x) " {_" << #x << "_}={_" << x << "_} "
+#define xbugVar(x) adm::ULO() << adm::STREAMKEYWORDS::vars_ << " (_" << #x << "_)=(_" << x << "_) "
+#define xbugDbl(x) adm::ULO() << adm::STREAMKEYWORDS::vars_ << " (_" << #x << "_)=(_" << adm::_::DblContainer(x) << "_) "
+#define bugWatch adm::_::objs::SCOPEWATCH reallyLongVariableNameThatWillNeverConflictWithAnything = adm::_::objs::SCOPEWATCH()
+#define xbugWatch(x) adm::_::objs::SCOPEWATCH reallyLongVariableNameThatWillNeverConflictWithAnything = adm::_::objs::SCOPEWATCH(x)
+#define xbugEnd adm::ULO() << adm::STREAMKEYWORDS::trace_ << "[_END_]\n"
+#define xbugYesCall(x) { adm::ULO() << adm::STREAMKEYWORDS::trace_ << "{_YES_} "; x ;}
+#define xbugif(x) adm::ULO() << adm::STREAMKEYWORDS::trace_ << " ?(_" << #x << "_)="; if (x)
+
+#define xSnoop(x) adm::ULO() << adm::STREAMKEYWORDS::vars_ << " {_" << #x "_}={_" << x << "_}="; x
+#define xSnoopBool(x) adm::ULO() << adm::STREAMKEYWORDS::vars_ << " {_" << #x "_}={_" << ( x ? "TRUE" : "FALSE") << "_}="; x
+
+#define xbugYes adm::ULO() << adm::STREAMKEYWORDS::trace_ << "(_YES_)? "
+#define xbugNo adm::ULO() << adm::STREAMKEYWORDS::trace_ << "(_NO_)? "
+#define xbugTrue adm::ULO() << adm::STREAMKEYWORDS::trace_ << "(_TRUE_)? "
+#define xbugFalse adm::ULO() << adm::STREAMKEYWORDS::trace_ << "(_FALSE_)? "

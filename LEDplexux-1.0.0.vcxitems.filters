@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\LEDplexux.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\FX_Effects\Effects.cpp">
+      <Filter>_FX_</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\_Common.cpp">
+      <Filter>COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\LEDunit.cpp">
+      <Filter>LED Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\Color.cpp">
+      <Filter>COLOR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\PLEXUS.cpp">
+      <Filter>PLEXUS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\UnitState.cpp">
+      <Filter>Unit State</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\FX_Effects\blipFX.cpp">
+      <Filter>_FX_\_blipFX_</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\LEDplexux.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\FX_Effects\Effects.h">
+      <Filter>_FX_</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\_Common.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\LEDunit.h">
+      <Filter>LED Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Color.h">
+      <Filter>COLOR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\BUILD_SETTINGS\_BUILD_SETTINGS.h">
+      <Filter>_BUILD_SETTINGS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\PLEXUS.h">
+      <Filter>PLEXUS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\UnitState.h">
+      <Filter>Unit State</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\FX_Effects\blipFX.h">
+      <Filter>_FX_\_blipFX_</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)LEDplexux.vcxitems">
+      <Filter>_stuff</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)LEDplexux.vcxitems.filters">
+      <Filter>_stuff</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)cpp.hint" />
+    <None Include="$(MSBuildThisFileDirectory)src\FX_Effects\cpp.hint">
+      <Filter>_FX_</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)library.properties">
+      <Filter>_stuff</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt">
+      <Filter>_stuff</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_stuff">
+      <UniqueIdentifier>{56029413-9d6a-4c3f-a3e0-21f4440b401f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_FX_">
+      <UniqueIdentifier>{c7cd5f6e-7c1c-4255-92ab-8228a4ae8749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COMMON">
+      <UniqueIdentifier>{76ae2506-1fd5-4c4f-9561-e347328b29ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LED Unit">
+      <UniqueIdentifier>{699d15a3-d81e-437f-b608-12d849d8cab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COLOR">
+      <UniqueIdentifier>{bc3d4394-6268-49fa-a0aa-b57009f5236d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_BUILD_SETTINGS">
+      <UniqueIdentifier>{fefa0b6d-74e7-4872-9101-005eed3f77b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PLEXUS">
+      <UniqueIdentifier>{26bee167-48ca-4c52-a812-9b086ebdfbcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unit State">
+      <UniqueIdentifier>{6dd0c014-7f70-493b-934e-724ab803919b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_FX_\_blipFX_">
+      <UniqueIdentifier>{25afe72a-2025-498d-8003-161fb83d78ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
