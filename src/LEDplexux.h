@@ -14,7 +14,7 @@
 	#include "WProgram.h"
 #endif
 
-#include <PLEXUS.h>
+#include "PLEXUS.h"
 #include <LEDunit.h>
 
 #endif
